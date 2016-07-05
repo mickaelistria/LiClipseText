@@ -1835,5 +1835,13 @@
     <extension point="org.brainwy.liclipsetext.editor.liclipse_error_collector">
         <error_collector_participant class="org.brainwy.liclipsetext.editor.error_handling.LiClipseLanguageErrorCollector"/>
     </extension>
+    <extension
+          point="org.eclipse.ui.workbench.texteditor.contentAssistProcessors">
+       <contentAssistProcessor
+             class="org.brainwy.liclipsetext.editor.common.LiClipseContentAssistProcessor2">
+          <activeWhen>
+             <or></or></activeWhen>
+       </contentAssistProcessor>
+    </extension>
 
 </plugin>
